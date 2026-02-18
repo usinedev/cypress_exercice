@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 describe('Smoke test', () => {
-    it('Application répond', () => {
+    it('Test de connexion', () => {
     cy.visit('http://localhost:3000/');
 
-    // cy.get(`[name="username"]`).type('Usertest');
+    cy.get(`[name="username"]`).type('Usertest');
 
-    // cy.get(`[name="password"]`).type('1234');
+    cy.get(`[name="password"]`).type('1234');
 
-    // cy.get(`button`).click();
+    cy.get(`button`).click();
 });
 });
